@@ -15,6 +15,11 @@ const searchTerm = atom({
 function SearchInputComponent({ searchMovies }) {
   const searchTermValue = useRecoilValue(searchTerm); // Get the search term from Recoil state
   const setSearchTerm = useSetRecoilState(searchTerm); // Set the search term in Recoil state
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      searchMovies(searchTermValue); // Trigger search on Enter
+    }
+  };
 
   return (
     <>
@@ -23,6 +28,7 @@ function SearchInputComponent({ searchMovies }) {
         placeholder="Search For Movies"
         value={searchTermValue}
         onChange={(e) => setSearchTerm(e.target.value)} // Update the search term
+        onKeyDown={handleKeyDown} //call the enter press function
       />
       <img
         src={SearchIcon}
