@@ -49,6 +49,7 @@ function App() {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
     setMovies(data.Search || []);
+    console.log(data.Search || []);
     setLoading(false); // Stop loading
   }, []); // Empty dependency array ensures searchMovies is not recreated on every render
 
