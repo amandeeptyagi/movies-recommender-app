@@ -61,7 +61,7 @@ function App() {
   return (
     <RecoilRoot>
       <div className="app">
-        <h1>MOVIE LAND</h1>
+        <h1>MOVIE HUB</h1>
         <div className="search">
           <SearchInputComponent searchMovies={searchMovies} />
         </div>
