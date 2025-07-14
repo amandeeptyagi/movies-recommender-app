@@ -38,6 +38,17 @@ cd movies-recommender-app
 npm install
 
 
+### Setup `.env` file
+
+Create a `.env` file in the root directory and add your OMDB API key:
+
+```env
+VITE_OMDB_API_KEY=your_OMDB_api_key_here
+```
+
+> Get your API key from: https://www.omdbapi.com/
+
+
 ```bash
 # ▶️ Start the development server
 npm run dev
@@ -62,6 +73,7 @@ movies-recommender-app/
 │   └── assets/
 │       ├── react.svg
 │       └── search.svg
+├── .env
 ├── .git/
 ├── dist/
 ├── node_modules/
