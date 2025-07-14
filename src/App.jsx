@@ -4,7 +4,7 @@ import SearchIcon from './assets/search.svg';
 import MovieCard from './MovieCard';
 import { RecoilRoot, atom, useRecoilValue, useSetRecoilState } from 'recoil';
 
-const API_URL = "https://www.omdbapi.com?apikey=fef2e9a7";
+const API_URL = `https://www.omdbapi.com?apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
 
 // Atom to manage the search term in Recoil state
 const searchTerm = atom({

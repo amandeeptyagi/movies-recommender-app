@@ -71,3 +71,10 @@ movies-recommender-app/
 # 🙌 Acknowledgements
 - OMDb API: https://www.omdbapi.com/
 - Placeholder Images: https://placehold.co/
+
+
+---
+
+> Made with ❤️ by Amandeep Tyagi
+
+🙏If you like this repo please give a star⭐😊.
