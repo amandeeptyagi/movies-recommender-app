@@ -18,13 +18,18 @@ function SearchInputComponent({ searchMovies }) {
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       searchMovies(searchTermValue); // Trigger search on Enter
+      e.target.blur();
     }
   };
 
   return (
     <>
       <input
-        type="text"
+        type="search"
+        inputMode="text"
+        autoComplete="on"
+        autoCorrect="on"
+        spellCheck="true"
         placeholder="Search For Movies"
         value={searchTermValue}
         onChange={(e) => setSearchTerm(e.target.value)} // Update the search term
