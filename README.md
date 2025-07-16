@@ -66,6 +66,8 @@ npm run dev
 - Vite – For blazing-fast development
 
 # 📁 Project Structure
+
+```
 movies-recommender-app/
 │
 ├── public/
@@ -84,6 +86,8 @@ movies-recommender-app/
 ├── node_modules/
 ├── package.json
 ├── README.md
+
+  ```
 
 # 🙌 Acknowledgements
 - OMDb API: https://www.omdbapi.com/
